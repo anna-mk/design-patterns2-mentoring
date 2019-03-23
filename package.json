@@ -4,7 +4,9 @@
   "description": "",
   "main": "config/conf.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart-webdriver": "webdriver-manager update",
+    "start-webdriver": "webdriver-manager start",
+    "protractor": "protractor config/conf.js"
   },
   "author": "Anna Mkrtchyan",
   "license": "ISC",
