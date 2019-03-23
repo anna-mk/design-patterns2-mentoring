@@ -1,13 +1,12 @@
-const CareersPage = require('../po/careersPage');
-const JobsPage = require('../po/jobsPage');
+const PageFactory = require('../factory/pageFactory');
 
 describe('EPAM Careers page', () => {
 
     let careersPage, jobsPage;
 
     beforeAll(() => {
-        careersPage = new CareersPage();
-        jobsPage = new JobsPage();
+        careersPage = PageFactory.getPage('CareersPage');
+        jobsPage = PageFactory.getPage('JobsPage');
         careersPage.visit();
     });
 
